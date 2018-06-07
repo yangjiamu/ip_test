@@ -15,7 +15,7 @@ public class TestController {
 
     @GetMapping("/test")
     public String test(HttpServletRequest request) {
-        log.info(request.getRemoteAddr());
+        log.info("ip: {}", request.getRemoteAddr());
         return "hello";
     }
 }
